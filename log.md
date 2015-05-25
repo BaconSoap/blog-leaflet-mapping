@@ -7,3 +7,6 @@
 - wrap in IIFE
 - DOMContentLoaded
 - addMarker()
+- bind a popup with http://thecatapi.com
+- add singleclick event
+- add marker on click
