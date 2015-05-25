@@ -1,0 +1,6 @@
+- npm install -g bower
+- install leaflet, http://maps.stamen.com/js/tile.stamen.js?v1.3.0
+- mkdir src
+- download stamen.js (curl  > src/stamen.js)
+- make basic index.html page with all references, a div for map, and #map style
+- commit
