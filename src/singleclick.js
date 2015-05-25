@@ -1,5 +1,5 @@
 /**
- * Adds
+ * Adds the event type 'singleclick' to L.Map
  */
 (function(doubleClickDelay) {
   L.Map.addInitHook(function() {
