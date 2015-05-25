@@ -16,8 +16,7 @@
   }
 
   function addMarker() {
-    var marker = L.circleMarker([42.3964631, -71.1205171]);
-    map.addLayer(marker);
+    L.marker([42.3964631, -71.1205171]).addTo(map);
   }
 
   document.addEventListener('DOMContentLoaded', init);
