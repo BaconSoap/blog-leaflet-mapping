@@ -23,6 +23,9 @@
     map.on('singleclick', onClick);
 
     util.onById('toggleDrawing', 'click', toggleDrawing);
+
+    map.on('editable:drawing:start', onDrawingStart);
+    map.on('editable:drawing:end', onDrawingEnd);
   }
 
   /**
@@ -38,15 +41,23 @@
     addMarker(e.latlng);
   }
 
+  function onDrawingStart(e) {
+    isDrawing = true;
+    util.getById('toggleDrawing').innerText = 'Stop Drawing';
+    console.log(e);
+  }
+
+  function onDrawingEnd(e) {
+    isDrawing = false;
+    util.getById('toggleDrawing').innerText = 'Draw';
+    console.log(e);
+  }
+
   function toggleDrawing() {
     if (isDrawing) {
-      util.getById('toggleDrawing').innerText = 'Draw';
       map.editTools.stopDrawing();
-      isDrawing = false;
     } else {
-      util.getById('toggleDrawing').innerText = 'Stop Drawing';
       map.editTools.startPolygon();
-      isDrawing = true;
     }
   }
 

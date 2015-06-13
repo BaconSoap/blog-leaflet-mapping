@@ -13,4 +13,5 @@
 - part 1 done
 
 - bower install --save leaflet.editable#leaflet0.7
-- 
+- add basic editing
+- refactor editing to use events for starting/stopping/text change
