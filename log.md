@@ -10,3 +10,7 @@
 - bind a popup with http://thecatapi.com
 - add singleclick event
 - add marker on click
+- part 1 done
+
+- bower install --save leaflet.editable#leaflet0.7
+- 
