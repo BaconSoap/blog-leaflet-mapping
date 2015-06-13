@@ -15,3 +15,8 @@
 - bower install --save leaflet.editable#leaflet0.7
 - add basic editing
 - refactor editing to use events for starting/stopping/text change
+- bower install --save turf
+- color turfs
+- color markers contained in turfs on turf end
+- add more event listeners for dragging
+- assign marker when created

@@ -58,6 +58,8 @@
     util.getById('toggleDrawing').innerText = 'Stop Drawing';
     var polygon = e.layer;
     polygon.polygonId = nextPolygonId++;
+    var id = polygon.polygonId;
+    polygon.setStyle({fillColor: colors[(id < colors.length? id: colors.length - 1)]});
     polygons[polygon.polygonId] = polygon;
   }
 
